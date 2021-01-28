@@ -4,16 +4,49 @@
         <meta charset="utf-8" />
         <title>Form Examples for HTML</title>
     </head>
-
-
+    
     <body>
-        <!--Form elements, Most common form is the textbox-->
+        <!---You need a heading for the form -->
+        <h1>Sign up for my awesome service</h1>
+
+        <!--Form elements, Most common form that in is the textbox-->
         <form>
-            <!--for is used to link id so the screen reader could distiguised which one is which-->
+            <!--for is used to link id so the screen reader could distiguised which one is which, link, you never want to have a text base type in the password input, Use the asterisks intead of text-->
             <label for="username">Username:</label>
-            <input id="username" type="text"/>
+            <input id="username" type="email" name="email" />
             <br />
             <label for="password">Password:</label>
-            <input id="password" type="text"/>
+            <input id="password" type="password" name="password" />
+            <br />
+
+            <!---Check box, allows the user to select multiple items-->
+            <label>Preferred Food:</label>
+            <p><input type="checkbox"  name="food"  value="pizza" disabled="disabled"/> Pizza</p>
+            <p><input type="checkbox" name="food" value="sushi"/> Shushi</p>
+            <p><input type="checkbox" name="food" value="burrito" /> Burrito</p>
+
+            <!--radio buttons,the name is not for the html or browser, it is for sending for data, now it is to tell the browser that this is a set.
+            Other need JavaScript.-->
+            <label>Favorite Past-times</label>
+            <p><input type="radio" name="pasttime" value="sleep" /> Sleeping</p>
+            <p><input type="radio" name="pasttime"  value="games"/> Video Games</p>
+            <p><input type="radio" name="pasttime"  value="cycling" /> Cycling</p>
+            <p><input type="radio" name="pasttime" value=""/> Other:<input type="text" /></p>
+
+            <!---Name is for Key(what we are talking about Grouping) and Value(different values), these are the two for sending information to another server. Avoid spaces in the Values. 
+            Checked for the default functions for RADIO buttons. -->
+            <label>Favorite Movies Genres</label>
+            <p><input  type="radio" name="genre" checked="checked"/> Action</p>
+            <p><input type="radio" name="genre" /> Adventue</p>
+            <p><input type="radio" name="genre" /> Drama</p>
+
+            <!-- The most common button is the SUBMIT button.
+            To gather all the data
+            Reset empty up the pages as it was before changing information.
+            The third button is a generic button but it is used for JavaScript-->
+            <input type="submit" />
+            <input type="reset" />
+            <input type="button" value="Do Nothing" action="http://yahoo.com" />
         </form>
+
     </body>
