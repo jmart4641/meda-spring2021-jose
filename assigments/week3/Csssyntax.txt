@@ -1,0 +1,24 @@
+
+
+in css we have three main parts
+1) Selector is the html part that you want to select. Write the name of a tag. It is formal to put a space after the selector Example p.
+2) properties Curly braces { }
+3) Style rule(defines the styles applied to an element or group elements, is the building block  of the CSS style sheet.)
+p { 
+    Properties Name: Value   
+}
+
+p {
+    color: blue;
+    font-size: 77px;
+}
+
+Specificity, Layout for tommorow
+
+Ids for specific elements. with ID don't use any character or capital or number at the beginning.
+
+When you Web design something you have to make it placent. It is an idea not an ability.
+
+non text properties
+licensing picture- for our project we will be crediting
+name of the author, licensing for use, one link

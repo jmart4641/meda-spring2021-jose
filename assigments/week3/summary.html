@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Summary</title>
+<!--Style tag is only used inside of the head. Inline style -->
+    <style>
+        p {
+            color: blue;
+            background-color:  aquamarine;
+            font-size: 24px;
+            font-family: "Arial";
+            font-weight: bold;
+            font-style: italic;
+            line-height: 34px;
+            word-spacing: 10px;
+            letter-spacing: 1px;
+        }
+
+        /*  Look for ul and look inside and select all li elements. -->
+        ul li , Parent decendant */
+
+        ul li {
+            color: red;
+        }
+        
+       ol li {
+            color: green;
+        }
+        main article dl dd {
+            color: cyan;
+        }
+
+        dd {
+            font-size: 20px;
+        }
+        #special {
+            font-size: 40px;
+        }
+
+        #submitbutton {
+            background-color: red;
+        }
+
+        main article form input {
+            background-color: green;
+        }
+
+        #password {
+            background-color: blue;
+        }
+        img {
+            width: 400;
+            height: 400;
+            border-width: 10px;
+            border-color: black;
+            border-style: solid;
+            /*with radious is to control how rounded are the pictures*/
+            border-radius: 210px;
+        }
+    </style>
+</head>
+<!--Don't confuse: head header h1 -->
+
+<body>
+<!--Heading is a div which has special meaning-->
+<header>
+</header>
+
+<main>
+    <article>
+
+        <h1>This a Summary of HTML5</h1>
+        
+        <p>Is to hold normal text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nobis sed nemo explicabo ducimus voluptate odit recusandae fuga corporis rem id! Quos placeat atque reprehenderit culpa assumenda ratione sequi voluptas!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsam eaque corporis natus? Veritatis necessitatibus assumenda nisi autem culpa odit, expedita ipsum voluptate quaerat velit eos consequatur quae illum obcaecati?</p>
+
+        <ul>
+            <li>Music</li>
+            <li>Sleep</li>
+        </ul>
+
+        <ol>
+            <li>Burrito</li>
+            <li>Tortas</li>
+        </ol>
+
+        <dl>
+            <dt>p</dt>
+            <dd>Used for nomal text.</dd>
+            <dt>h1</dt>
+            <dd>Used for headings (level 1).</dd>
+        </dl>
+
+        <!--width and heigh is the starting point of loading-->
+        <figure>
+        <img src="pexels-elina-sazonova-3971983.jpg" alt="This is an image file that does not exist"  width="200" height="200"/>
+        <figcaption id="special">This is an image.</figcaption>
+        <figure>
+        <table>
+            <thead>
+                <tr>
+                    <td>Column 1</td>
+                    <td>Column 2</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <label for="username">Username</label>
+            <input id="username" type="text" />
+            <label for="password">Password</label>
+            <input id="password" type="password" />
+            <input id="submitbutton" type="submit" />
+        </form>
+    </article>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+ <dl>
+    <dd>Hello</dd>
+ </dl>
+
+
+</body>
+
+</html>
