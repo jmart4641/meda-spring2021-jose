@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Summary</title>
-<!--Style tag is only used inside of the head. Inline style -->
+<!--Style tag is only used inside of the head. Internal CSS -->
     <style>
         p {
             color: blue;
@@ -18,7 +18,9 @@
             word-spacing: 10px;
             letter-spacing: 1px;
         }
-
+        h1 {
+            color: red;
+        }
         /*  Look for ul and look inside and select all li elements. -->
         ul li , Parent decendant */
 
@@ -41,15 +43,15 @@
         }
 
         #submitbutton {
-            background-color: red;
+           background-color: red;
         }
 
         main article form input {
-            background-color: green;
+            /*background-color: green;*/
         }
 
         #password {
-            background-color: blue;
+            /*background-color: blue;*/
         }
         img {
             width: 400;
@@ -59,6 +61,63 @@
             border-style: solid;
             /*with radious is to control how rounded are the pictures*/
             border-radius: 210px;
+        }
+        #first-table {
+            border-width: 1px;
+            border-style: dashed;
+            border-color: red;
+            width: 400px;
+            /* border-collapse: collapse; */
+            border-spacing: 10px;
+            background-color: gray;
+        }
+
+        #first-table tr {
+            /* border shorthand for border-width, border-style, border-color*/
+            border: 1px, dotted, blue;
+        }
+        /* This will help with advance select table, this select all the cell*/
+        #first-table td {
+                border: 1px solid green;
+                border-radius: 5px;
+                /*Marging is the space between the elements*/
+                padding-top:10px;
+                padding-right:10px;
+                padding-bottom:10px;
+                padding-left:10px;
+                background-color: white;
+                font-family: 'Courier New', Courier, monospace;
+        }
+
+        #username {
+            /*It will inhearit from the ancestor body, default value*/
+            background-color: white;
+            /*
+            margin controls the space out, shorthand. Order of value for margin/padding:
+            TOP RIGHT BOTTOM LEFT 
+            -if you use two values
+            Top/Bottom left/Right
+            -All around
+            20px    */
+            margin: 20px;
+            /*padding effects the content, control spaces between the text*/
+            padding: 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: slategray;
+            border: slategray 2px solid;
+        }
+
+
+        #submitbutton {
+            /*Units as %,px*/
+            width: 52px;
+            height: 52px;
+            padding: 0;
+            border-radius: 50%;
+            border-color: tomato;
+            border-style: solid;
+            color:white;
         }
     </style>
 </head>
@@ -100,7 +159,13 @@
         <img src="pexels-elina-sazonova-3971983.jpg" alt="This is an image file that does not exist"  width="200" height="200"/>
         <figcaption id="special">This is an image.</figcaption>
         <figure>
-        <table>
+            <!--Rules for naming IDs and Classes
+            Don't start with a number
+            Don't use special characters
+            Don't use spaces unintecional
+            Don't capitalize the first letter.-->
+
+        <table id="first-table">
             <thead>
                 <tr>
                     <td>Column 1</td>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity Example</title>
+
+<style>
+
+    /* do not repeat properties: There is a way to targe all three elements IDs use commas
+    The cascading effect- the latest effect is applied, because the computer reads from top to bottom*/
+    #redbox, #bluebox, #greenbox {
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+    }
+    #redbox {
+        background-color:gray;
+    }
+    #redbox {
+        background-color:red;
+    }
+    #redbox {
+        background-color:purple;
+    }
+    #bluebox {
+        background-color: blue;
+        width: 100;
+    }
+
+    #greenbox {
+        background-color: green;
+    }
+
+    /*specifiticy weights, will have a value. the higher the value the more important they get. Overule, the value that is less. class at 10 point, IDs 100. Who ever has the highest value property get priority
+    */
+    div {
+        background-color: cyan;
+    }
+    body main form #password {
+
+    }
+body .container .sidebar p {}
+    }
+</style>
+</head>
+
+
+<body>
+
+<!--The default height is 0-->
+<div id="redbox" class="box"></div>
+<div id="bluebox" class="box"></div>
+<div id="greenbox" class="box"></div>
+    
+</body>
+
+</html>
