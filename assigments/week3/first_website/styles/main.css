@@ -1,12 +1,34 @@
 body {
     background-color:antiquewhite;
+    
 }
 
-header {
+/* Resizing each side of the web page. */
+#container {
     width: 900px;
-    height: 200px;
+    margin: auto;
     background-color: white;
+    border: black 2px solid;
+    border-radius: 20px;
+    /* any content that is escaping the parent, it will be hidden */
+    overflow: hidden;
+}
+header {
+    height: 150px;
     border-bottom: black 2px solid;
+}
+
+header h1 {
+
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top: 25px;
+
+    /* So float make its own list, it is not in the flow. */
+}
+header img {
+    float: left;
 }
 
 header nav {
@@ -29,15 +51,53 @@ header nav li {
     font-size: 22px;
 }
 
+/* Pseudo class for changing the links states. a:link, Visited, hover, active.
+Needs to be in order */
+header  nav li a:link{
+        color:dodgerblue;
+        text-decoration: none;
+}
+
+/* To control visited links to reset it to the orginal color. */
+header  nav li a:visited {
+            color:dodgerblue
+}
+
+/* is it not recommended to change the size of padding.  Do not change the font size when hovering and font or anything active, no border size change. You can change colors. */
+header nav li a:hover{
+        color: slateblue;
+        text-decoration: underline;
+        background-color: green;
+        /* padding: 10px; */
+        /* font-size: 30px; */
+
+}
+
+/* Navagation they are style not underlining them */
+
+header nav li a:active {
+    color: tomato;
+    text-decoration: none;
+}
  main {
-     width: 900px;
      height: 500px;
-     background-color: white;
+     /* background-color: white; */
      border-bottom: black 2px solid;
  }
 
  footer {
-     width: 900px;
+    width: 900px;
      height: 200px;
-     background-color: white;
+     background-color: purple;
+     color: white;
+}
+
+footer p {
+     margin-block-start: 0;
+     margin-block-end: 0;
+}
+
+#copyright {
+    text-align: center;
+    font-family: Arial;
 }

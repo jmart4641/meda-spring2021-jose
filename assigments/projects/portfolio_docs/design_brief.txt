@@ -1,0 +1,93 @@
+Name: Jose Martinez Perez
+Date: February 9, 2021
+Project 2, Planning 
+
+(A)
+
+BODY TEXT
+
+The Body text should be white, it will blend in with the background color too which is Burgundy. In this case, if I use a lighter color, it might be difficult not be the best option since the background is burgundy. In the future, I might change the text color but for now I will keep it as color white.
+
+HEADING TEXT
+
+For the heading Text color, the text will Icy Blue. I think think Icy blue might blend with a background Burgundy color. I did a little bit of research in color blending and I liked this color for the Heading text.
+
+LINK TEXT
+
+Link text will light gray, but when someone hover on text, it will turn color Olive. I think this will match this will be a good mach. SO far I believe I am choosing my colors wisely.
+
+
+BACKGROUND
+
+For the back ground color would Burgundy and why I choose this color for the background is because it is one of my favorite colors. It also combines with different color such as blue, and white. Later on when I have the necessary skill, I could probably the colors up. The Hexadecimal cod for Burgundy is #800020
+
+
+(B) 
+
+IMAGES LINKS
+
+I have downloaded the images and the sites will be listed here. The images that are used are allowed for non commercial. I have also included one image of myself. 
+
+The following link is for the Microsoft Word log, which will be used as as below the second paragraph in the tech skill part.
+https://brandeps.com/logo/M/Microsoft-Excel-02
+
+The following link is for the image that will be used to represent 
+https://www.pexels.com/photo/black-screen-with-code-4164418/
+
+(C) Is submitted as sitemap.jpg document and is the image folder.
+
+
+(D)
+
+ABOUT ME
+Hello my name is Jose Martinez, I have received a Bachelors Degree in Music Education, and I have been working in the Education Field for five years. I served as an Academic tutor/Music Instructor and assist students with homework and recreational activities such as robotics, painting, ceramics, slime, sports, photography, hiking. I have taught music theory, Piano, brass instruments and an Intro SCRATCH Programming course. As today, I am planning to take Programming in Python and continue taking Web Development classes. Future goals, I am applying for a Masters in Information Systems in Fall 2021, where I will be focusing on Cloud computing/software development. 
+
+
+I am have built some basic calculator on Visual Basic. I used If Statements which includes IF ELSE, IF ELSEIF ELSE, and nested IFs, Loops such as for, while. I have also some experience in basic fundamental of electronics and I have used a multimeter to measure, voltage, resistance, and current. For school projects, I have also built basic circuits such parallel and series circuits using different types of components such as resistors, transistors, NPN,PNP, Photocell, LED, Potentiometer.
+
+I also have a side business in the music music industry, I am a member of small musical group, where I serve a tubist.
+
+PROJECTS
+
+ School projects that I have worked on are the following:
+-Breadboard series circuits
+-Parellel circuits
+
+CONTACT
+
+I am open to Internships, Apprenticeship, and I am available for work in Southern California.
+Feel free to contact me at jmtzperez464@gmail.com
+
+(E)
+
+1) https://www.tarapixley.com/about
+
+Why do I like about this site?
+I really liked the simplicity of this website, it is very easy to navigate through it. I also liked that this person included their social media on the side. The Header was on the Left side, where other webpages's names were displayed un the navigation. I took a look into the coding part, It seems that the list is nested under the nav and in a Div which has a class assigned to pre_text. In this website to footer is with in a div tag on the left side. The main content is a div container and it hold the images and Text.
+
+Why did not like about this website? In the contact page, I didn't like the way how the Email box layout. In the portfolio, under reportage, some of the images are not alight together, I think there is an overflow of couple with images towards the bottom of the page. There are is a bug in the footer, where the social media is displayed, the icons are not perfectly aligned with each other.
+
+2)https://www.seanhalpin.design/wip/
+
+Why do I like about this site?
+I liked this website because it the design is very solid. The colors blend with each other. The Header has only 7 different items. It is very easy to navigate through. Overall, this is the type of heading that I would like to see in my portfolio website. The main, contains the pictures and text but mostly a lot cool designs. The footer is has a text that displayed "have an exciting project where you need some help? Send me over a message and let's chat" the chat is in a anchor tag which opens a chat box. Pretty cool website.
+
+Why did not like about this website? 
+The only two things that I didn't like about this website is that the profile picture is tilted a side or rotated. It was a little annoyed by that picture. The second this was there was a chat box for which doesn't disappear if you don't refresh the page. It would be Cool, if that chat box can suddenly banished if the user is not typing in the text box.
+
+3)http://www.nathaliejankie.nl
+
+Why do I like about this site?
+The first thing that I notice when I scroll at the footer is that this person has her resume in the bottom. I like that she has her resume on the page. Since I am also having my resume on my site this a good example for that. I have decided to put my resume under the second paragraph or and in there heading. The main content was displayed in one page.
+
+Why did not like about this website? 
+I did not like that this person has everything on one page,I personally prefer having a heading and in the navigation container have at least three separate pages. Part of the page has also a different background color, I think it would be best to have one background  color. The footer, just had a Link-in page no email, the link in was in the left corner and the on font-size is to small.
+
+(F) 
+
+
+
+G)
+
+
+
