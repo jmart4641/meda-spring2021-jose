@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+
+    <style>
+        body {
+            color: white;
+            font-size: 24px;
+            font-family: Arial;
+            
+        }
+        #container {
+            /* height: 500px; */
+            background-color: moccasin;
+            /* Flexbox */
+            display: flex;
+            /*  Reverses the miror. it flips the order, */
+            flex-direction: column-reverse;
+            /* flex-wrap it goes to the next line. */
+            flex-wrap: ;
+
+        }
+        
+        .child {
+            background-color:olivedrab;
+            /* height: 33.3%;166.66666666~ */
+            /* The value that you need to start off. Flex-flow determines the height */
+            /* flex grow reprensent the weight of importance. */
+            flex-grow: 1;
+            /* margin: 0 5px; */
+            /* controls the exact amount of spaces of the content. */
+            flex-basis: 250px;
+            /* flex shrink all them shrink equally */
+            flex-shrink: 1;
+        }
+        /* The middle box is twice as big than the other two boxes */
+        #first {
+            order: 1; 
+        }
+        #second {
+            flex-grow: 6; 
+            flex-basis: 400px;
+            flex-shrink: 1;
+            background-color:orange;
+        }
+        #third {
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            background-color: royalblue;
+            /* for Order defaul number is 0. */
+            /* order: -1; */
+        }
+        /* Flexbox */
+    </style>
+
+</head>
+
+<body>
+    <!-- Ids has to be unique name, and classes can have the same -->
+    <div id="container">
+        <!-- The middle child take spaces and the rest 1 each which totals of 4. -->
+        <div class="child" id="first">
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet mollitia quas exercitationem aut. Quas unde laboriosam necessitatibus, odit, praesentium, cumque repellat quod similique magni minima maxime asperiores aspernatur maiores at.</p>
+        </div>
+        <div class="child" id="second">
+            <p> 2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, eveniet voluptatum eaque rem mollitia, fuga nobis deleniti nisi architecto iure laboriosam consequatur cumque quaerat recusandae adipisci! Adipisci quasi corrupti officia.</p>
+        </div>
+        <div class="child" id="third">
+            <p> 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit aliquam natus, delectus amet laboriosam quam quas vitae in consectetur, repellendus modi libero ab doloremque ut odio iusto autem deserunt minus.</p>
+        </div>
+    </div>
+</body>
+
+</html>

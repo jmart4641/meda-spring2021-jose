@@ -40,12 +40,12 @@ https://www.pexels.com/photo/black-screen-with-code-4164418/
 (D)
 
 ABOUT ME
-Hello my name is Jose Martinez, I have received a Bachelors Degree in Music Education, and I have been working in the Education Field for five years. I served as an Academic tutor/Music Instructor and assist students with homework and recreational activities such as robotics, painting, ceramics, slime, sports, photography, hiking. I have taught music theory, Piano, brass instruments and an Intro SCRATCH Programming course. As today, I am planning to take Programming in Python and continue taking Web Development classes. Future goals, I am applying for a Masters in Information Systems in Fall 2021, where I will be focusing on Cloud computing/software development. 
+
+Hello my name is Jose Martinez, I have received a Bachelors Degree in Music Education, and I have been working in the Education Field for five years. I served as an Academic tutor/Music Instructor and assist students with homework and recreational activities such as robotics, painting, ceramics, slime, sports, photography, hiking. I have taught music theory, Piano, brass instruments and an Intro SCRATCH Programming course.I also have a side business in the music music industry, I am a member of small musical group, where I serve as a tubist. As today, I am planning to take Programming in Python and continue taking Web Development classes. Future goals, I am applying for a Masters in Information Systems in Fall 2021, where I will be focusing on Cloud computing/software development. 
 
 
-I am have built some basic calculator on Visual Basic. I used If Statements which includes IF ELSE, IF ELSEIF ELSE, and nested IFs, Loops such as for, while. I have also some experience in basic fundamental of electronics and I have used a multimeter to measure, voltage, resistance, and current. For school projects, I have also built basic circuits such parallel and series circuits using different types of components such as resistors, transistors, NPN,PNP, Photocell, LED, Potentiometer.
+I am have built some basic calculators on Visual Basic and used If Statements which includes IF ELSE, IF ELSEIF ELSE, and nested IFs, Loops such as for, Do while. Basic fundamentals of electronics and hardware components are some of the skills I am acquiring currently. Some of the devices that I have interacted with are multimeters to measure, voltage, resistance, and current. For school projects, I have also built basic circuits such parallel and series circuits using different types of components such as resistors, transistors, NPN,PNP, Photocell, LED, Potentiometer. Career wise, I am always open to learn from others, I believe it is the best way to learning how code. My current goal is to work as a front-end web developer.
 
-I also have a side business in the music music industry, I am a member of small musical group, where I serve a tubist.
 
 PROJECTS
 
