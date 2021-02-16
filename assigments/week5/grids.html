@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <!--Name: Jose Martinez
+            Date: February 16, 2021
+            Subject: Grids
+         -->
+
+        <meta charset="utf-8" />
+        <title>CSS Grids</title>
+
+        <style>
+            /* absolute value- pixels does not change.  Relative- changes depends on the web browser. */
+            #grid-container {
+                display: grid;
+                height: 100vh;
+                background-color: powderblue;
+                grid-template-columns: 1fr 1fr 2fr 1fr;
+                grid-template-rows: 1fr 3fr;
+                /* Please take up the first lines. grid takes 2 lines */
+
+            }
+            /* #grid-container div {
+                background-color: rosybrown;
+            } */
+
+            #child1 {
+                background-color: royalblue;
+                grid-column-start: 1;  /* grid: 1/ 3 / 1 / 3; */
+                grid-column-end: 3;    /* grid-column: 1 / 3; grid-row: 1 /3 ; */
+                grid-row-start: 1;
+                grid-row-end: 3;
+                /* border: solid 5px black;
+                border-radius: 15px;
+                margin:  5px; */
+            }
+
+            #child2 {
+                background-color: tan;
+                grid-column: 4 / 5;
+                grid-row: 2 / 3;
+            }
+            
+            #child3 {
+                background-color: yellow;
+                grid-column: 3 / 4;
+                grid-row: 1 / 3;
+            }
+
+            #child4 {
+                background-color: rosybrown;
+            }
+        </style>
+        
+</head>
+
+
+<body>
+    <!-- Grid is  -->
+    <div id="grid-container">
+        <div id="child1">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, veritatis nobis vero aliquam architecto alias minima ipsam delectus expedita eius adipisci odit tenetur rerum tempora sunt culpa velit. Tempora, neque.</p>
+        </div>
+        <div id="child2"></div>
+        <div id="child3"></div>
+        <div id="child4"></div>
+    </div>
+
+
+</body>
+
+</html>
