@@ -21,7 +21,11 @@ For the heading Text color, the text will Icy Blue. I think think Icy blue might
 
 February 23, 2021
 
-Heading text was changed to white
+Heading text color was changed to white
+
+Added to HEADER 23, 2021 at 12:20pm
+Background of  #B36B7D like a light pink.
+Font-family: Arial, Helvetica, sans-serif;
 
 LINK TEXT
 
@@ -35,6 +39,7 @@ February 23, 2021
 Text link for Pdf was changed to white unvisited and hover salmon
 
 
+
 BACKGROUND
 
 For the back ground color would Burgundy and why I choose this color for the background is because it is one of my favorite colors. It also combines with different color such as blue, and white. Later on when I have the necessary skill, I could probably the colors up. The Hexadecimal cod for Burgundy is #800020
@@ -42,6 +47,10 @@ For the back ground color would Burgundy and why I choose this color for the bac
 February	 21, 2021 at 4 pm
 Added white borders to the content and the images.
 Added a lighter pink as a background.
+
+February 23, 2021 at 12:30pm
+A container was added that has a width of 950px, color #952843 slightly brighter than burgundy.
+Border radios of 20px and overflow is hidden
 
 (B) 
 
@@ -61,6 +70,9 @@ https://www.pexels.com/photo/black-screen-with-code-4164418/
 February 23,2021
 Images of electronic project and a screenshot of coding was place in the folder images.
 
+Feb 24, 2020
+@ 2pm
+Images and log was created and placed in the images folder.
 (C) Is submitted as sitemap.jpg document and is the image folder.
 
 
@@ -73,8 +85,11 @@ Hello my name is Jose Martinez, I have received a Bachelors Degree in Music Educ
 
 On the other Hand, I am have worked on some coding on Visual Basic such as If Statements which includes IF ELSE, IF ELSEIF ELSE, and nested IFs, Loops such as for, Do while. Basic fundamentals of electronics and hardware components are some of the hands on skills I am currently acquiring. Some of the devices that I have interacted with are multimeters to measure, voltage, resistance, and current. For school projects, I have also worked on basic circuits such as parallel and series circuits using different types of components such as resistors, transistors, NPN,PNP, Photocell, LED, Potentiometer. Regarding to other skills, I am comfortable using word, excel, access, HTMl5 and a bit of CSS. Career wise, I am open to learn more from other web developers, I believe that is the best way to learning how to code. My current goal is to work as a front-end web developer and later on, transition into the back-end.
 
-January 23, 2021 8am
-Email was excluded from this page.
+Feb. 23, 2021 8am
+Email and GitHub were excluded from this page 
+
+Text formatted Feb. 23, 2021 12:40pm
+Font-family:  Georgia, 'Times New Roman', Times, serif;
 
 PROJECTS
 
@@ -82,6 +97,7 @@ PROJECTS
 -Breadboard series circuits
 
 February 23, 2021
+
 Added text
 In this experiment, a 555 IC was used which is a two-state device. This means that the input in pin 3 can only be HI or LO. In this case, a LED is used turned on and off because of the square pulses emitted by Pin 3 and are called “clock blink pulses.” The LED blinked on and off at a frequency of about one time per second.
 
@@ -92,7 +108,7 @@ CONTACT
 I am open to Internships, Apprenticeship, and I am available for work in Southern California.
 Feel free to contact me at jmtzperez464@gmail.com
 
-January 24, 2021
+Feb 24, 2021
 A form was created. Also in the footer the Git hub was removed.
 
 (E)
