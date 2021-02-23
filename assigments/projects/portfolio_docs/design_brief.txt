@@ -31,6 +31,9 @@ February 21, 2021
 Unvisited text color is white, text white, Visited is #70376D, Hover is salmon.
 Change the Olive to a light purple. And olive to salmon when hover over the heading (navigation) Link.
 
+February 23, 2021
+Text link for Pdf was changed to white unvisited and hover salmon
+
 
 BACKGROUND
 
