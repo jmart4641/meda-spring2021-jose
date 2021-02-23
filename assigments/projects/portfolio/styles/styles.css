@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #800020 ;
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Resizing each side of the web page. */
+ #container {
+    width: 950px;
+    margin: auto ;
+    background-color:#952843;
+    border: 2px solid;
+    border-radius: 20px;
+    overflow: hidden;
+   
+}
+
+header {
+    top:0;
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    background-color: #B36B7D;
+    
+}
+
+header img {
+    float: left;
+    border: 2px solid;
+    border-radius: 200px;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: right;
+    color: white;
+    
+}
+header nav li {
+    width: 140px;
+    display: inline-block;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Pseudo class for changing the links states. a:link, Visited, hover, active.
+Needs to be in order */
+header  nav li a:link{
+        color:white;
+}
+
+/* To control visited links to reset it to the orginal color. */
+header  nav li a:visited {
+            color:#70376D;
+}
+
+header nav li a:hover{
+        color:salmon;
+        text-decoration: underline;
+
+}
+
+/* Navagation they are not style underlined now*/
+
+header nav li a:active {
+    color:gray;
+    text-decoration: none;
+}
+ main {
+
+     height: 800px;
+     margin:20px;
+     font-family: 'Times New Roman', Times, serif;
+     
+ }
+
+
+#myimage img {
+     float: left;
+     margin-right: 20px;
+     border: 3px solid whitesmoke;
+     border-radius: 15px;
+     overflow: auto;
+}
+
+ article {
+    overflow: hidden;
+    margin-left: 30px;
+    text-align: justify;
+ }
+
+p {
+    font-size: 1em ;
+    font-family: "Georgia", "Times New Roman", "Times", serif;
+    word-spacing: 0.05em;
+    line-height: 1.5em;
+    margin-bottom: 40px;
+}
+
+/* #electrons {
+    margin-top: 0%;
+    float: left;
+    overflow: hidden;
+    width: 550px;
+    height: 150px;
+    font-family: "Nanum Gothic Coding", monospace;
+    border: 2px solid white;
+    border-radius: 12px 12px 12px;
+    padding: 3px;
+    background-color: salmon;
+    position: relative; */
+/* } */
+.code p {
+    /* margin-top: 0%;
+    float: left; */
+    font-family: "Nanum Gothic Coding", monospace;
+    /* border: 2px solid white;
+    border-radius: 12px 12px 12px;
+    padding: 12px;
+    background-color: salmon; */
+
+    
+}
+
+/* Skills List */
+ ul li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    word-spacing: 0.05em;
+    line-height: 1.5em;
+}
+
+#resume p a:link{
+    color:white;
+
+}
+
+#resume p a:hover{
+    color:salmon;
+    text-decoration: underline;
+
+}
+
+#resume p a:visited {
+    color:#70376D;
+}
+
+/* About me */
+
+/* #content-project {
+    flex
+}
+#photos {
+    display: flex;
+    overflow: hidden;
+    flex-grow: initial;
+    float: left;
+    border: 2px solid white;
+    width: 250px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+#about-me {
+    display: flex;
+;
+ float: right;
+ width: 200px;
+ height: 300px;
+ border: 2px solid white;
+} */
+/* Projects page */
+
+#content-project img {
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+    
+}
+
+#coding { 
+         width: 200px;
+        height: 200px;
+            /* you can only use on of these top or botmm */
+        top: 500px;
+            /* bottom: ; */
+            /* left: ; */
+        right: 750px;
+}
+
+#up {
+    width: 200px;
+    height: 200px;
+        /* you can only use on of these top or botmm */
+    top: 500px;
+        /* bottom: ; */
+        /* left: ; */
+    right: 750px
+}
+
+/* Contact page */
+
+#contact {
+    width: 500px;
+    word-spacing: 1.5em;
+    line-height: 2em;
+    border: 3px solid white;
+    text-align: left;
+}
+
+#coming-projects {
+    flex-direction: row;
+}
+ footer {
+     background-color:#B36B7D;
+     color: white;
+     text-align: center;
+     /* margin: auto; */
+     /* top:0; */
+     width: 100%;
+     height: 80px;
+     /* overflow: hidden; */
+     /* inset-block-end: 0;
+     display: inline-block;
+     vertical-align: auto; */  
+    
+}
+
+footer p {
+   
+
+     /* margin-block-start: 0;
+     margin-block-end: 0; */
+     padding: 20px;
+     align-self: auto;
+     margin: auto;
+
+}
+
+#copyright {
+    text-align: center;
+    font-family: Arial;
+}
