@@ -8,19 +8,37 @@ BODY TEXT
 
 The Body text should be white, it will blend in with the background color too which is Burgundy. In this case, if I use a lighter color, it might be difficult not be the best option since the background is burgundy. In the future, I might change the text color but for now I will keep it as color white.
 
+February 21, 2021
+The body and the h1 h2 text color changed to white and font-family: Arial, Helvetica, sans-serif;.
+
+A div was added as a container which holds the content. And has a lighter background color #952843;
+
+Text 
+
 HEADING TEXT
 
 For the heading Text color, the text will Icy Blue. I think think Icy blue might blend with a background Burgundy color. I did a little bit of research in color blending and I liked this color for the Heading text.
 
+February 23, 2021
+
+Heading text was changed to white
+
 LINK TEXT
 
-Link text will light gray, but when someone hover on text, it will turn color Olive. I think this will match this will be a good mach. SO far I believe I am choosing my colors wisely.
+Link text will light gray, but when someone hover on text, it will turn color Olive. I think this will match this will be a good match. SO far I believe I am choosing my colors wisely.
+
+February 21, 2021
+Unvisited text color is white, text white, Visited is #70376D, Hover is salmon.
+Change the Olive to a light purple. And olive to salmon when hover over the heading (navigation) Link.
 
 
 BACKGROUND
 
 For the back ground color would Burgundy and why I choose this color for the background is because it is one of my favorite colors. It also combines with different color such as blue, and white. Later on when I have the necessary skill, I could probably the colors up. The Hexadecimal cod for Burgundy is #800020
 
+February	 21, 2021 at 4 pm
+Added white borders to the content and the images.
+Added a lighter pink as a background.
 
 (B) 
 
@@ -31,8 +49,14 @@ I have downloaded the images and the sites will be listed here. The images that 
 The following link is for the Microsoft Word log, which will be used as as below the second paragraph in the tech skill part.
 https://brandeps.com/logo/M/Microsoft-Excel-02
 
+February	23, 2021
+The Microsoft Word image was excluded.
+
 The following link is for the image that will be used to represent 
 https://www.pexels.com/photo/black-screen-with-code-4164418/
+
+February 23,2021
+Images of electronic project and a screenshot of coding was place in the folder images.
 
 (C) Is submitted as sitemap.jpg document and is the image folder.
 
@@ -46,17 +70,27 @@ Hello my name is Jose Martinez, I have received a Bachelors Degree in Music Educ
 
 On the other Hand, I am have worked on some coding on Visual Basic such as If Statements which includes IF ELSE, IF ELSEIF ELSE, and nested IFs, Loops such as for, Do while. Basic fundamentals of electronics and hardware components are some of the hands on skills I am currently acquiring. Some of the devices that I have interacted with are multimeters to measure, voltage, resistance, and current. For school projects, I have also worked on basic circuits such as parallel and series circuits using different types of components such as resistors, transistors, NPN,PNP, Photocell, LED, Potentiometer. Regarding to other skills, I am comfortable using word, excel, access, HTMl5 and a bit of CSS. Career wise, I am open to learn more from other web developers, I believe that is the best way to learning how to code. My current goal is to work as a front-end web developer and later on, transition into the back-end.
 
+January 23, 2021 8am
+Email was excluded from this page.
 
 PROJECTS
 
  School projects that I have worked on are the following:
 -Breadboard series circuits
+
+February 23, 2021
+Added text
+In this experiment, a 555 IC was used which is a two-state device. This means that the input in pin 3 can only be HI or LO. In this case, a LED is used turned on and off because of the square pulses emitted by Pin 3 and are called “clock blink pulses.” The LED blinked on and off at a frequency of about one time per second.
+
 -Parellel circuits
 
 CONTACT
 
 I am open to Internships, Apprenticeship, and I am available for work in Southern California.
 Feel free to contact me at jmtzperez464@gmail.com
+
+January 24, 2021
+A form was created. Also in the footer the Git hub was removed.
 
 (E)
 
