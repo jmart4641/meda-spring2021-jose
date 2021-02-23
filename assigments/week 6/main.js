@@ -233,4 +233,4 @@ if (numberToTest == 0) {
 if (numberToTest < 0) {
     console.log("The number is negative.");
 }
-//Loops
+
