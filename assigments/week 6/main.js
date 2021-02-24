@@ -316,7 +316,7 @@ for (var i = 0; i < 10; i++) {
         continue;
     }
     //break stops the loop. Only use it in a loop. breakt the entire loop
-    // Continue, breaks one of the individual loops/
+    // Continue, breaks one of the individual loops.
     console.log("the color is blue");
 }
 
