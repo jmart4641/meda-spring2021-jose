@@ -219,18 +219,109 @@ if (myFirstOdject.firstName == "Jose") {
 }
 
 
-var numberToTest = 16;
+var numberToTest = -4;
 
 if (numberToTest >0 ) {
     console.log(" The number is positive.");
+} else {
+    console.log("The Number is Not positive.");
 }
+
+console.log("Hello!");
 
 if (numberToTest == 0) {
     console.log("The number is  zero.");
 
-}
+ } else {
+     console.log("This nomber is not a Zero");
+ }
 
 if (numberToTest < 0) {
     console.log("The number is negative.");
+} else {
+    console.log("The number is NOT negative.");
 }
+
+//If statements
+//February 24, 2021
+
+var personAge;
+
+personAge =13;
+
+var personLikesDrinking = true;
+if (personAge >= 21 && personAge <= 25) {
+    console.log("Congrants! You are of drinking age!");
+
+    if (personLikesDrinking == true) {
+        console.log("What alcholic drink do you like?");
+    }
+
+} else if (personAge >= 26 && personAge <= 40) {
+    console.log("Do you want to go grab a beer?");
+} else {
+    console.log("Have you tried video games?");
+}
+
+
+//Loops: while-will run the code again while (true)
+
+//While loop, CHECK FIRST if condition is tru, if true THEN run code block.
+var continueRunning = 0;
+
+while (continueRunning < 10) {
+         console.log("We ran the loop once!");
+
+         //reassined the value to false, so the continueRunning value will change to false. Everything on the right side happens first we calling a variable.
+         continueRunning = continueRunning + 1;
+
+         var count = 0;
+         
+         //inner loops is the power of the inner loop 10 * 10 = 1000. This inner loop run 100. Big O notation N2 not good. 
+        //  while (count < 10) {
+        //      console.log("inner loop ran!");
+        //     count = count + 1;
+        //      }
+
+}
+
+
+
+ var personAnswer = "no";
+
+// Do While Loop, Rund code block FIRST, then checks the condition.
+do {
+    console.log("Ran one loop!");
+
+    personAnswer = prompt("Continue the loop?"); //we no longer use the promp
+} while (personAnswer == "yes");
+
+
+// For loops, "condition" area has THREE parts.
+// Syntax: for (counter; conditions; iterator) {}
+
+for (var keepRunning = 0; keepRunning < 10; keepRunning = keepRunning + 1) {
+    console.log("This for loop ran once!");
+}
+
+for (var i = 0; i < 10; i++) {
+     
+    if (valueAlreadyFound == true) {
+        // If the program ever hits this keyword,it will end the loop completely.
+    break;
+    }
+
+    if (color == "red") {
+        // If the program hits this keyword, will end this specific iteration(individual (cycles) loops, ex. 10 iteration, to represet 10 cycles,).
+        continue;
+    }
+    //break stops the loop. Only use it in a loop. breakt the entire loop
+    // Continue, breaks one of the individual loops/
+    console.log("the color is blue");
+}
+
+// Double plus, adds a 1 to the variable.
+// double minus, removes a 1 from the variable.
+// i++ is the same as i = i + 1
+
 
