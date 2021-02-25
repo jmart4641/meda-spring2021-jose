@@ -451,4 +451,5 @@ mathForMe(23, 320);
 //     console.log("The" + " " + keyName + " of " + number1 + " and " + number2+ " is " + results[keyName]); }
 
 // Nan: Not a Number, meaning you multiplied or divided by a value that cannot be mutliplied or divided.
+
 // Infinity: what is this?
