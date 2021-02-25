@@ -290,11 +290,11 @@ while (continueRunning < 10) {
  var personAnswer = "no";
 
 // Do While Loop, Rund code block FIRST, then checks the condition.
-do {
-    console.log("Ran one loop!");
+// do {
+//     console.log("Ran one loop!");
 
-    personAnswer = prompt("Continue the loop?"); //we no longer use the promp
-} while (personAnswer == "yes");
+//     personAnswer = prompt("Continue the loop?"); //we no longer use the promp
+// } while (personAnswer == "yes");
 
 
 // For loops, "condition" area has THREE parts.
@@ -306,17 +306,17 @@ for (var keepRunning = 0; keepRunning < 10; keepRunning = keepRunning + 1) {
 
 for (var i = 0; i < 10; i++) {
      
-    if (valueAlreadyFound == true) {
-        // If the program ever hits this keyword,it will end the loop completely.
-    break;
-    }
+    // if (valueAlreadyFound == true) {
+    //     // If the program ever hits this keyword,it will end the loop completely.
+    // break;
+    // } 
 
-    if (color == "red") {
-        // If the program hits this keyword, will end this specific iteration(individual (cycles) loops, ex. 10 iteration, to represet 10 cycles,).
-        continue;
-    }
-    //break stops the loop. Only use it in a loop. breakt the entire loop
-    // Continue, breaks one of the individual loops.
+    // if (color == "red") {
+    //     // If the program hits this keyword, will end this specific iteration(individual (cycles) loops, ex. 10 iteration, to represet 10 cycles,).
+    //     continue;
+    // }
+    // //break stops the loop. Only use it in a loop. breakt the entire loop
+    // // Continue, breaks one of the individual loops.
     console.log("the color is blue");
 }
 
@@ -325,3 +325,130 @@ for (var i = 0; i < 10; i++) {
 // i++ is the same as i = i + 1
 
 
+
+//Practice  chapter 2 For loop. It is harder to custumize loops.
+var result = 1;
+for (var counter = 0; counter < 10; counter = counter + 1){
+    result = result * 2;
+}
+console.log(result);
+
+
+// .forEach(); each function, goes throug it and does something to the values.
+// A fuction for arrays that goes through each element of the array 
+var someArray = [10, 20, 30, 40, 50];
+someArray.forEach(function(arrayValue) {
+    console.log(arrayValue + 100);
+});
+
+
+// Fuctions, are tiny little sets of codes.
+
+function myFirstFunction() {
+    console.log("hello from first function!");
+}
+
+// This is how we call a function
+myFirstFunction();
+myFirstFunction();
+myFirstFunction();
+
+
+//Parameters (fancy name for variable that belong to a function) they accept values and Arguments (fance name for the value of a parameter.) Abstracting code(we dont know what is has, but we know what it does, deals with the logic)
+
+// Parameter are wrriten within the Parenthesis of the DEFINITION(what the fuction is called)
+function addTwoNumbers(firstNumber, secondNumber) {
+    var total = firstNumber + secondNumber;
+
+    console.log(total);
+}
+
+// Arguments(values are assigned to, fancy name for var) are written within the parenthesisi of the CALL.
+addTwoNumbers(10, 1);
+addTwoNumbers(100,5);
+addTwoNumbers(-5, 10);
+
+// Returning Values from frunctions
+
+// Concatenation (fancy word for): combining two strings.
+
+function makeExciting(sentence) {
+    var excitingSentence = sentence + "!!!";
+
+    console.log(excitingSentence);
+
+    return [excitingSentence, excitingSentence, 1000];
+}
+
+// Fuction calling
+// Storing the fuctions 
+ var savedSentence = makeExciting("Hi there");
+ var savedSentence2 = makeExciting("Would you like ice cream");
+
+ console.log("The value" + savedSentence);
+
+
+
+//Example Function, Math Summarizer;
+
+    function mathSummarizer(num1, num2) {
+
+    var sum = num1 + num2;
+    var difference = num1 - num2;
+    var differenceReversed = num2 - num1;
+    var quotient = num1 / num2;
+    var quotientReversed = num2 / num1;
+    var product = num1 * num2;
+
+    // adding objects  ex "sum"
+    // Retur [ sum, differene, differenceReversed, quotient, quotientReversed, product];
+
+    var object = { "sum": sum,
+    "Difference": difference, "differenceReversed": differenceReversed, "Quotienet": quotient, 
+    "Quotient Reversed": quotientReversed, "Product": product 
+    };
+
+    return object; //data goes out of the function.
+}
+
+// Main function
+function mathForMe(num1, num2) {
+    
+    var number1 = num1;
+    var number2 = num2;
+    var results = mathSummarizer(number1, number2);
+
+    for (var keyName in results) {
+        console.log("The" + " " + keyName + " of " + number1 + " and " + number2+ " is " + results[keyName]);
+    }
+    
+    console.log(" ");
+}
+
+//Calling the funtion
+
+mathForMe(10, 20); // Each of these calla requal to ~25 lines of code.
+mathForMe(50, 100);
+mathForMe(54, 234);
+mathForMe(23, 320);
+
+
+
+// var number1 = 50;
+// var number2 = 100;
+
+// var results = mathSummarizer(number1, number2);
+
+// console.log(results);
+
+// var sumSentence = "The sume of 9 and 15 is " + results["sum"];
+// var productSentence = "The product of 9 and 15 is " + results["Product"];
+
+// console.log(productSentence);
+
+
+// for (var keyName in results) {
+//     console.log("The" + " " + keyName + " of " + number1 + " and " + number2+ " is " + results[keyName]); }
+
+// Nan: Not a Number, meaning you multiplied or divided by a value that cannot be mutliplied or divided.
+// Infinity: what is this?
