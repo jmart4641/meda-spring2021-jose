@@ -69,8 +69,12 @@ https://www.pexels.com/photo/black-screen-with-code-4164418/
 
 February 23,2021
 Images of electronic project and a screenshot of coding was place in the folder images.
+ 
+February 25, 2021
 
-Feb 24, 2020
+Head picture was added and used in the about (index.html). And a log that was created was added on the header for each page.
+
+Feb 24, 2021
 @ 2pm
 Images and log was created and placed in the images folder.
 (C) Is submitted as sitemap.jpg document and is the image folder.
