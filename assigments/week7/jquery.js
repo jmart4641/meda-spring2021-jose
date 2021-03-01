@@ -70,7 +70,6 @@ var formSumit = $("#submit");
         //Write a sentence with the results into our paragraph.
         $("#resultsParagraph").text("We multiplied your number by then and got: " + mathStuff);
 
-
         //PareseInt(); tries to convert the value provide into a number data type.
 
         // console.log(convertedData + 1000);
