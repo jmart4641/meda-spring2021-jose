@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+ <script>
+
+     //Variables
+
+     // 1) Define and Assign value.
+    var myFinalVariable = [ "String is a collection of character", true, 1000]; // The value is an array holding the String, Boolean, and Number data types.
+
+    myFinalVariable = {};  // Empty object, this will REPLACE the array above for lines after 19.
+
+    // Arrays and Objects
+
+    var myFinalArray = [1, 2, 3];
+
+    var myLargeArray = [
+        100,
+        200,
+        300,
+        400,
+        500
+    ];
+
+    var myFinalObjects = {"someValue": 1000};
+
+    var myLargeObject = {
+        "firstValue": 1000,
+        "secondValue": 2000,
+        "thirdValue": 3000
+    };
+    
+    // If Statements
+
+    if (false) {
+        // This will only run if the conditions is true.
+    } 
+
+    if (false) {
+
+    } else {
+        // This will only run if the condition is false. MUST ALWAY BE AT ENED OF AN IF STATEMENT.
+    } 
+    
+    if (false) {
+
+    } else if (false) {
+        // This will only run if the condition in the lese is true. MUST GO BETWEEN THE IF AND THE ELSE SECTIONS OF AN IF STATEMENT.
+    }
+
+    // "Fully built"
+    if (false) {
+
+    } else if (false) {
+
+    } else if (false) {
+
+    } else {
+
+    }
+
+    // Loops: While, Do WHile, For.
+
+    var counter= 0;
+
+    while (counter < 10) {
+        counter++;
+    }
+
+    var counter2 = 0;
+    do {
+        counter2++
+    } while (counter2 < 10);
+
+    for (var counter = 0; counter < 10; counter++) {
+        //do something
+    }
+
+    // Functions, parameterss; and Arguments.
+
+    function myFinalFunction(parameter1, parameter2) {
+        console.log(parameter1);
+
+        return parameter2; // returns the value2 in the parameter2.
+    }
+
+    var savedReturnedData = myFinalFunction ("argument 1", "argument2");
+
+    myFinalFunction("value1", "values2");
+
+
+    // undefined and null, NaN
+
+    var variableThatHasNoValue;
+    console.log(variableThatHasNoValue);
+
+    var emptyVariable = "My credidt card name";
+
+    emptyVariable = null;
+    console.log(emptyVariable);
+
+    console.log (NaN * NaN);
+
+    console.log (1 / 0);
+    
+    console.log ("one hundred" * 10);
+
+    console
+    // Type Coercion
+
+    // String to Number
+
+    var num1 = 10 + "100"; // concatenate output is 10100.
+
+    var num2 = "10" + "100";
+    console.log(num1, num2);
+
+    // Thruthy a & Falsey values.
+    // Falsey
+    null;
+    undefined;
+    0;
+    "";
+    NaN;
+
+    // TRUTHY EXAMPLES
+    -1;
+    1;
+    " ";
+    [];
+    {};
+
+
+    var test = "Hello";
+    if (test) {
+        console.log ("This is truthy value");
+
+    } else {
+        console.log(" This is a falsy value.");
+    }
+
+
+    true == true;
+    false == false;
+
+    // Triple equals means the Value has to be the same AND the datatype.
+    // Double equals te Vale has to be the same.
+    console.log(100 === "100");
+
+    //hard type scripts, Java
+
+
+</script>
+</body>
+</html>

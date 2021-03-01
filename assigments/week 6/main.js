@@ -453,3 +453,15 @@ mathForMe(23, 320);
 // Nan: Not a Number, meaning you multiplied or divided by a value that cannot be mutliplied or divided.
 
 // Infinity: what is this?
+
+// Practice
+var power = function(base, exponent) {
+    var result = 1;
+    for (var count = 0; count < exponent; count++) {
+        result *= base;
+        
+    }
+       return result;
+    }
+    
+   console.log(power(2, 10));
