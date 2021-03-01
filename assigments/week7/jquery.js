@@ -34,8 +34,6 @@ var myOnlyButton = $("#my-button"); //returning the value, it the value is getti
 // $("head").remove();
 // $("body").remove();
 
-// The reason we do th
-
 
 // Waits some time and the run the code specified. This is a JavaScript Function.
 
