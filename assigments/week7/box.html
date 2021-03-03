@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Box</title>
+
+    <style>
+
+        body    {
+            margin: 0;
+        }
+        #firstBox {
+            width: 100px;
+            height: 100px;
+            background-color: palevioletred;
+            border-radius: 50%;
+        }
+    </style>
+<script src ="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+
+    <div id ="firstBox"></div>
+    
+        <script>
+            $(document).ready(function()/*anonymous function */{
+                var myBox = $("#firstBox");
+
+                jQuery/*$ This is javascript*/("body").keypress(function(even) {
+                    // event.preventDefault(); // not to do what it needs to do.
+
+                    var key = event.which; // gives us a number
+
+                    //UP
+                    if (key === 119) {
+
+                        var currentMarginTop = myBox.css("margin-top");
+
+                        if (currentMarginTop != "0px"){
+
+                            myBox.css("margin-top", "-=20px");
+                        }
+                        // console.log("Move up!"); 
+                        // myBox.css("margin-top", "-=10");
+                        
+
+                     //LEFT  
+                    } else if (key === 97) {
+
+                         var currentMarginleft =myBox.css("margin-left");
+
+                         if (currentMarginleft != "0px"){
+                          myBox.css("margin-left","-=20px");
+                         }
+                        // console.log("Move left!");
+                     
+                       
+                    //DOWN
+                    } else if (key === 115) {
+
+
+                        console.log("Move down!");
+
+
+
+                        //"ONE LINER"
+                        // var currentMarginTop = $("#firstBox").css("margin-top");
+
+                        // currentMarginTop = parseInt(currentMarginTop);
+
+                        // var newMargin = (currentMarginTop + 10) + "px";
+                        // $("#firstBox").css("margin-top", newMargin); //add the existant value in the top
+
+                       myBox.css("margin-top", "+=20");
+
+                    //RIGHT
+                    } else if (key === 100) {
+                        console.log("Move right");
+
+                        myBox.css("margin-left", "+=20px");
+                    ///RIGHT
+                    }
+
+                    // console.log("key as pressed");
+                })
+            })
+
+        </script>
+
+    
+</body>
+</html>
