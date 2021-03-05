@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <style>
+        /* Make sure you put some style on here  */
+        /* chnage colors */
+        /* * {
+            box-sizing: border-box;
+        } */
+        html {
+            display: block;
+        }
+
+        body {
+            background-color: #6DA1C2;
+            margin: 0;
+
+        }
+
+        #container {
+            width: auto;
+            /* height: 500px; */
+            background-color: #89CCF5;
+            /* overflow: auto; */
+            /* border-radius: 10px; */
+            margin: auto;
+
+        }
+
+
+        #input {
+            display: flex;
+            background-color: #D4E9F7;
+            /* height: 300px; */
+
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        #input div form input {
+            margin-left: 10px;
+            margin: 15px;
+            /* box-sizing: border-box; */
+            padding: 3px 1px;
+            width: auto;
+
+        }
+
+        #input div form input {
+            margin-left: 50px;
+            display: flex;
+            margin: auto;
+
+        }
+
+        #input div form label {
+            display: flex;
+            margin: auto;
+            display: inline-block;
+            font-size: 16px;
+            padding: 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        #input div {
+            flex-grow: 1;
+            flex-basis: 50%;
+            margin: auto;
+            padding-left: 10px;
+            margin-left: 20px;
+
+
+        }
+
+        #submit {
+            border-radius: 20px;
+            padding: 10px;
+            margin: 20px;
+            border: solid gold 5px;
+            font-size: 20px;
+            display: flex;
+            margin: auto;
+            /* float: right; */
+            margin-bottom: 10px;
+
+        }
+
+        #results {
+            background-color: #49ADB8;
+            height: 150px;
+            /* overflow: hidden; */
+            text-align: center;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .rest {
+            background-color: seashell;
+
+        }
+
+        #results p {
+            font-size: 18px;
+        }
+    </style>
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Budget Calculator</h1>
+
+        <div id="input">
+            <div>
+                <!-- align them without aligning the text -->
+                <h2>Monthly Expenses</h2>
+                <form>
+                    <label for="food">Food</label>
+                    <input type="number" id="food" />
+                    <br />
+                    <label for="rent">Rent</label>
+                    <input type="number" id="rent" />
+                    <br />
+                    <label for="util">Utilities</label>
+                    <input type="number" id="util" />
+                    <br />
+                    <label for="internet">Internet</label>
+                    <input type="number" id="internet" />
+                    <br />
+                    <label for="mobile">Mobile</label>
+                    <input type="number" id="mobile" />
+                    <br />
+                    <label for="interest">Debt Interest</label>
+                    <input type="number" id="interest" />
+                    <br />
+                    <label for="rainy-day">Rainy Day Fund</label>
+                    <input type="number" id="rainy-day" />
+                    <br />
+                    <label for="hobbies">Hobbies</label>
+                    <input type="number" id="hobbies" />
+                    <br />
+                    <label for="travel">Travel Fees</label>
+                    <input type="number" id="travel" />
+                    <br />
+                    <label for="health">Health Insurance</label>
+                    <input type="number" id="health" />
+                    <br />
+                    <input type="reset" class="rest" />
+                </form>
+
+                <br />
+                <!--Calculate button-->
+                <button id="submit">Calculate</button>
+            </div>
+
+            <div id="">
+                <h2>Monthly Income Sources</h2>
+                <form>
+                    <label for="job">Day Job(Employee)</label>
+                    <input type="number" id="job" />
+                    <br />
+                    <label for="gig">Side Gigs(Average)</label>
+                    <input type="number" id="gig" />
+                    <br />
+                    <label for="investments">Investments</label>
+                    <input type="number" id="investments" />
+                    <br />
+                    <input type="reset" class="rest" />
+                </form>
+            </div>
+        </div>
+
+        <div id="results">
+            <h2>Results</h2>
+            <p id="monthly"></p>
+            <p id="yearly"></p>
+
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+
+            $("#submit").click(function () {
+
+                console.log("hi")
+                //Declaration of variables
+                // Expenses start
+
+                var food = $("#food").val();
+                var rent = $("#rent").val();
+                var utilities = $("#util").val();
+                var internet = $("#internet").val();
+                var mobile = $("#mobile").val();
+                var interest = $("#interest").val();
+                var rainyDay = $("#rainy-day").val();
+                var hobbies = $("#hobbies").val();
+                var travel = $("#travel").val();
+                var health = $("#health").val();
+
+
+
+                // Data Conversion, string to number using pasrseFloat
+
+                food = parseFloat(food);
+                rent = parseFloat(rent);
+                utilities = parseFloat(utilities);
+                internet = parseFloat(internet);
+                mobile = parseFloat(mobile);
+                interest = parseFloat(interest);
+                rainyDay = parseFloat(rainyDay);
+                hobbies = parseFloat(hobbies);
+                travel = parseFloat(travel);
+                health = parseFloat(health);
+
+                //  console.log(food, rent, utilities, interest, internet, mobile, interest, rainyDay, hobbies, travel, health);
+                //Calculation
+
+                var totalExpenses = food + rent + utilities + internet + mobile + interest + rainyDay + hobbies + travel + health;
+
+                // Output
+                console.log(totalExpenses);
+                //expenses END
+
+
+
+                // Income Starts
+                var dayJob = $("#job").val();
+                var gig = $("#gig").val();
+                var investments = $("#investments").val();
+
+                dayJob = parseFloat(dayJob);
+                gig = parseFloat(gig);
+                investments = parseFloat(investments);
+
+                var totalIncome = dayJob + gig + investments;
+                var difference = totalIncome - totalExpenses;
+
+                console.log(difference);
+
+                //Income Ends
+
+                //Results Start
+
+                if (difference > 0) {
+                    $("#monthly").text("congratulations, you have an extra $ " + difference + " dollars for this month!");
+                } else if (difference < 0) {
+                    $("#monthly").text("Looks like you will need to use your credit card to cover the $" + Math.abs(difference) + " expenses for this month...");
+                } else if (isNaN(difference)) {
+                    $("#monthly").text("One of your inuts does not have a number in it! Please use the value 0 (zero) instead! Thank you!");
+                }
+
+
+            });
+        });
+    </script>
+</body>
+
+</html>
