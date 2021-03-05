@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,10 @@
     <title>Moving Box</title>
 
     <style>
-
-        body    {
+        body {
             margin: 0;
         }
+
         #firstBox {
             width: 100px;
             height: 100px;
@@ -18,78 +19,133 @@
             border-radius: 50%;
         }
     </style>
-<script src ="jquery-3.5.1.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
 </head>
+
 <body>
 
 
-    <div id ="firstBox"></div>
-    
-        <script>
-            $(document).ready(function()/*anonymous function */{
-                var myBox = $("#firstBox");
+    <div id="firstBox"></div>
 
-                jQuery/*$ This is javascript*/("body").keypress(function(even) {
-                    // event.preventDefault(); // not to do what it needs to do.
+    <script>
 
-                    var key = event.which; // gives us a number
+        function rand0to255() {
+            var randomNumber = Math.random() * 256; //Range is 0 to 255.9~
+            randomNumber = Math.floor(randomNumber);
 
-                    //UP
-                    if (key === 119) {
+            // console.log(randomNumber);
 
-                        var currentMarginTop = myBox.css("margin-top");
+            return randomNumber;
 
-                        if (currentMarginTop != "0px"){
+        }
 
-                            myBox.css("margin-top", "-=20px");
-                        }
-                        // console.log("Move up!"); 
-                        // myBox.css("margin-top", "-=10");
-                        
+        function randomCSSColor() {
+            var myColor = rand0to255();
+            var myColor2 = rand0to255();
+            var myColor3 = rand0to255();
 
-                     //LEFT  
-                    } else if (key === 97) {
+            var cssRandomColor = "rgb(" + myColor + ", " + myColor2 + ", " + myColor3 + ")";
 
-                         var currentMarginleft =myBox.css("margin-left");
+            console.log(cssRandomColor);
 
-                         if (currentMarginleft != "0px"){
-                          myBox.css("margin-left","-=20px");
-                         }
-                        // console.log("Move left!");
-                     
-                       
+            return cssRandomColor;
+
+        }
+        // console.log(cssRandomColor);
+
+        // // Does not depend on. Random number generator for 1 to 10;
+
+        // // Make a random number between 0 and  .9~
+        // var randomNumber = Math.random();
+
+        // var randoNumber1to10 =(randomNumber * 10) + 1;
+
+        // // Math.floor() will always round DOWN, Math.ciel will always round UP, Math.round.will round base on the decimal.
+
+        // randoNumber1to10 = Math.floor(randoNumber1to10);
+
+
+        // console.log(randoNumber1to10);
+
+        // End f rando Number Generator for 1 to 10.
+
+        $(document).ready(function ()/*anonymous function */ {
+
+            var myBox = $("#firstBox");
+
+            myBox.hover(function () {
+                myBox.css("background-color", randomCSSColor());
+            });
+
+            jQuery/*$ This is javascript*/("body").keypress(function (even) {
+                // event.preventDefault(); // not to do what it needs to do.
+
+                var key = event.which; // gives us a number
+                
+
+                //UP
+                if (key === 119) {
+
+                     myBox.css("background-color", randomCSSColor());
+
+                    var currentMarginTop = myBox.css("margin-top");
+
+                    if (currentMarginTop != "0px") {
+
+                        myBox.css("margin-top", "-=20px");
+                    }
+                    // console.log("Move up!"); 
+                    // myBox.css("margin-top", "-=10");
+
+
+                    //LEFT  
+                } else if (key === 97) {
+
+                    myBox.css("background-color", randomCSSColor());
+
+                    var currentMarginleft = myBox.css("margin-left");
+
+                    if (currentMarginleft != "0px") {
+                        myBox.css("margin-left", "-=20px");
+                    }
+                    // console.log("Move left!");
+
+
                     //DOWN
-                    } else if (key === 115) {
+                } else if (key === 115) {
+
+                    myBox.css("background-color", randomCSSColor());
+
+                    // console.log("Move down!");
 
 
-                        console.log("Move down!");
 
+                    //"ONE LINER"
+                    // var currentMarginTop = $("#firstBox").css("margin-top");
 
+                    // currentMarginTop = parseInt(currentMarginTop);
 
-                        //"ONE LINER"
-                        // var currentMarginTop = $("#firstBox").css("margin-top");
+                    // var newMargin = (currentMarginTop + 10) + "px";
+                    // $("#firstBox").css("margin-top", newMargin); //add the existant value in the top
 
-                        // currentMarginTop = parseInt(currentMarginTop);
-
-                        // var newMargin = (currentMarginTop + 10) + "px";
-                        // $("#firstBox").css("margin-top", newMargin); //add the existant value in the top
-
-                       myBox.css("margin-top", "+=20");
+                    myBox.css("margin-top", "+=20");
 
                     //RIGHT
-                    } else if (key === 100) {
-                        console.log("Move right");
+                } else if (key === 100) {
+                    myBox.css("background-color", randomCSSColor());
+                    // console.log("Move right");
 
-                        myBox.css("margin-left", "+=20px");
+                    myBox.css("margin-left", "+=20px");
                     ///RIGHT
-                    }
+                }
 
-                    // console.log("key as pressed");
-                })
+                // console.log("key as pressed");
             })
+        })
 
-        </script>
+    </script>
 
-    
+
 </body>
+
 </html>

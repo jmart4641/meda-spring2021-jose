@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0097)file:///Users/josermartinez/Documents/meda-spring2021-jose/assigments/week7/budgetcalculator.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Calculator</title>
@@ -113,7 +112,7 @@
         }
     </style>
 
-    <script src="jquery-3.5.1.min.js"></script>
+    <script src="./Budget Calculator_files/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -128,39 +127,39 @@
                 <h2>Monthly Expenses</h2>
                 <form>
                     <label for="food">Food</label>
-                    <input type="number" id="food" />
-                    <br />
+                    <input type="number" id="food">
+                    <br>
                     <label for="rent">Rent</label>
-                    <input type="number" id="rent" />
-                    <br />
+                    <input type="number" id="rent">
+                    <br>
                     <label for="util">Utilities</label>
-                    <input type="number" id="util" />
-                    <br />
+                    <input type="number" id="util">
+                    <br>
                     <label for="internet">Internet</label>
-                    <input type="number" id="internet" />
-                    <br />
+                    <input type="number" id="internet">
+                    <br>
                     <label for="mobile">Mobile</label>
-                    <input type="number" id="mobile" />
-                    <br />
+                    <input type="number" id="mobile">
+                    <br>
                     <label for="interest">Debt Interest</label>
-                    <input type="number" id="interest" />
-                    <br />
+                    <input type="number" id="interest">
+                    <br>
                     <label for="rainy-day">Rainy Day Fund</label>
-                    <input type="number" id="rainy-day" />
-                    <br />
+                    <input type="number" id="rainy-day">
+                    <br>
                     <label for="hobbies">Hobbies</label>
-                    <input type="number" id="hobbies" />
-                    <br />
+                    <input type="number" id="hobbies">
+                    <br>
                     <label for="travel">Travel Fees</label>
-                    <input type="number" id="travel" />
-                    <br />
+                    <input type="number" id="travel">
+                    <br>
                     <label for="health">Health Insurance</label>
-                    <input type="number" id="health" />
-                    <br />
-                    <input type="reset" class="rest" />
+                    <input type="number" id="health">
+                    <br>
+                    <input type="reset" class="rest">
                 </form>
 
-                <br />
+                <br>
                 <!--Calculate button-->
                 <button id="submit">Calculate</button>
             </div>
@@ -169,15 +168,15 @@
                 <h2>Monthly Income Sources</h2>
                 <form>
                     <label for="job">Day Job(Employee)</label>
-                    <input type="number" id="job" />
-                    <br />
+                    <input type="number" id="job">
+                    <br>
                     <label for="gig">Side Gigs(Average)</label>
-                    <input type="number" id="gig" />
-                    <br />
+                    <input type="number" id="gig">
+                    <br>
                     <label for="investments">Investments</label>
-                    <input type="number" id="investments" />
-                    <br />
-                    <input type="reset" class="rest" />
+                    <input type="number" id="investments">
+                    <br>
+                    <input type="reset" class="rest">
                 </form>
             </div>
         </div>
@@ -253,44 +252,20 @@
 
                 //Income Ends
 
-
-                 // Taxes Start
-
-                 
-                var employeeTaxRate = .21;
-                var constractorTaxRate = .363;
-                
-                
-                var employeeTaxAmount = dayJob * employeeTaxRate;
-                var contactorTaxAmount = gig * constractorTaxRate;
-                var taxTotal = employeeTaxAmount + contactorTaxAmount; 
-
-                // difference = difference - taxTotal;
-                // difference -= employeeTaxAmount + contractorTaxAmount; another way to write the same above. short hand for the line above.
-
-
-
-
-
-
-                //Taxes End
-
                 //Results Start
 
                 if (difference > 0) {
-                    $("#monthly").text("congratulations, you have an extra $ " + difference +  " dollars for this month!  We recommend you put away $" + taxTotal + " for the tax man.");
+                    $("#monthly").text("congratulations, you have an extra $ " + difference + " dollars for this month!");
                 } else if (difference < 0) {
-                    $("#monthly").text("Looks like you will need to use your credit card to cover the $" + Math.abs(difference) + " expenses for this month...Keep in minda, based on your income youu also need to think about making up $" + taxTotal + "  for the tax man...");
-                } else if (difference == 0) {
-                    $("#monthly").text("You have exactly the same amount of expense as income! You're not off the hook yet though, make sure to figure out how to save $ " + taxTotal + " for the tax man.");
+                    $("#monthly").text("Looks like you will need to use your credit card to cover the $" + Math.abs(difference) + " expenses for this month...");
                 } else if (isNaN(difference)) {
-                    $("#monthly").text("One of your inputs does not have a number in it! Please use the value 0 (zero) instead! Thank you!");
-                } 
+                    $("#monthly").text("One of your inuts does not have a number in it! Please use the value 0 (zero) instead! Thank you!");
+                }
 
 
             });
         });
     </script>
-</body>
 
-</html>
+
+</body></html>
